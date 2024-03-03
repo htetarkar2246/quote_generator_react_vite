@@ -1,0 +1,66 @@
+.container{
+  background-color: #FFF;
+}
+
+.quote-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.author {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+  
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;  
+}
+  
+ 
+#new_quote_btn{
+  color:#FFF;
+  background-color: #0056b3;
+}
+
+#new_quote_btn:hover{
+  font-weight: bold;
+}
+
+#new_quote_btn:active{
+  color:#0056b3;
+  background-color: #FFF;
+  border-color: #0056b3;
+}
+
+.action-btn {
+  background-color: transparent;
+  color: #0056b3;
+  border: 2px solid #0056b3;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px; 
+  font-size: 15px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color
+}
+
+.action-btn:hover {
+  background-color: #0056b3;
+  color: #FFF;
+}
+
+.action-btn:active {
+  transform: translateY(1px); 
+}
+
