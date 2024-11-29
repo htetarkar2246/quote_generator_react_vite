@@ -4,7 +4,9 @@ import "./Quote.css";
 function Quote() {
     const [quote, setQuote] = useState("");
     const [author, setAuthor] = useState("");
-    const quote_api = "https://zenquotes.io/api/quotes";
+    
+    {/* api is not working any more. */}
+    const quote_api = "api";
 
     const generateQuote = () => {
         fetch(quote_api)
