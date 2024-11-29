@@ -4,15 +4,15 @@ import "./Quote.css";
 function Quote() {
     const [quote, setQuote] = useState("");
     const [author, setAuthor] = useState("");
-    const quote_api = "https://type.fit/api/quotes";
+    const quote_api = "https://zenquotes.io/api/quotes";
 
     const generateQuote = () => {
         fetch(quote_api)
             .then(response => response.json())
             .then(data => {
                 const randomIndex = Math.floor(Math.random() * data.length);
-                setQuote(data[randomIndex].text);
-                setAuthor(data[randomIndex].author);
+                setQuote(data[randomIndex].q);
+                setAuthor(data[randomIndex].a);
             })
             .catch(error => console.log("Error fetching quotes:", error));
     };
